@@ -4,17 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3561b91-47b4-4123-ba3f-751cb45194b5" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/service/KakaoApiService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/service/impl/KakaoApiServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/vo/KakaoApiRequestVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/vo/KakaoApiResponseVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/web/KakaoApiController.java" afterDir="false" />
+    <list default="true" id="d3561b91-47b4-4123-ba3f-751cb45194b5" name="변경" comment="Request DTO 셋팅">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/dto/KakaoApiRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/dto/KakaoApiResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/util/KakaoApiDTOUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/ranking/data/RankingData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/ranking/repository/RankingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/web/SearchApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/common/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/interceptor/RankingInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/blog.blog.test~1.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/blog/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/service/KakaoApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/service/KakaoApiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/service/impl/KakaoApiServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/service/impl/KakaoApiServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/vo/KakaoApiRequestVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/vo/KakaoApiResponseVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/web/KakaoApiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/util/HttpUrlConnectionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/util/HttpUrlConnectionUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,12 +86,13 @@
     <property name="project.structure.last.edited" value="모듈" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.35287356" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.splitter.proportion" value="0.25865582" />
   </component>
-  <component name="RunManager">
-    <configuration name="BlogApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="애플리케이션.BlogApplication (1)">
+    <configuration name="BlogApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hdragon.blog.BlogApplication" />
-      <module name="blog.blog.main" />
+      <module name="blog.blog.main~1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.hdragon.blog.*" />
@@ -93,9 +103,63 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BlogApplication" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.hdragon.blog.BlogApplication" />
+      <module name="blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hdragon.blog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="blog [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/blog" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="blog의 전부" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="blog" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.blog [dependencies]" />
+      <item itemvalue="JUnit.blog의 전부" />
+      <item itemvalue="애플리케이션.BlogApplication" />
+      <item itemvalue="애플리케이션.BlogApplication (1)" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.BlogApplication (1)" />
         <item itemvalue="애플리케이션.BlogApplication" />
+        <item itemvalue="Gradle.blog [dependencies]" />
       </list>
     </recent_temporary>
   </component>
@@ -115,11 +179,30 @@
       <option name="project" value="LOCAL" />
       <updated>1679108697016</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Api 서비스 인터페이스">
+      <created>1679115057559</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679115057559</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="프로젝트 최초 init" />
-    <option name="LAST_COMMIT_MESSAGE" value="프로젝트 최초 init" />
+    <MESSAGE value="Api 서비스 인터페이스" />
+    <MESSAGE value="Request DTO 셋팅" />
+    <option name="LAST_COMMIT_MESSAGE" value="Request DTO 셋팅" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

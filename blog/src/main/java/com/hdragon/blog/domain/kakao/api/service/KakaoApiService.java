@@ -1,9 +1,13 @@
 package com.hdragon.blog.domain.kakao.api.service;
 
-import com.hdragon.blog.domain.kakao.api.vo.KakaoApiRequestVO;
-import org.springframework.stereotype.Service;
+import com.hdragon.blog.domain.kakao.api.dto.KakaoApiRequestDTO;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.ParseException;
 
-public interface KakaoApiService {                      // spring proxy bean inject
+import java.io.UnsupportedEncodingException;
+import java.net.MalformedURLException;
 
-    public String getBlogSearch(KakaoApiRequestVO apiServiceVO);
+public interface KakaoApiService {                      // Bean inject by spring proxy
+
+    public JSONObject getBlogSearch(KakaoApiRequestDTO apiRequestDTO) throws MalformedURLException, UnsupportedEncodingException, ParseException;
 }
