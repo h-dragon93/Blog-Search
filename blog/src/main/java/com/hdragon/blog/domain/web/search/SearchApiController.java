@@ -1,6 +1,8 @@
 package com.hdragon.blog.domain.web.search;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.hdragon.blog.domain.kakao.api.dto.KakaoApiRequestDTO;
+import com.hdragon.blog.domain.kakao.api.dto.KakaoApiResponseDTO;
 import com.hdragon.blog.domain.kakao.api.service.KakaoApiService;
 import com.hdragon.blog.domain.kakao.util.KakaoApiDTOUtil;
 import lombok.RequiredArgsConstructor;
@@ -13,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
+import java.util.List;
 
 @Slf4j
 @Controller
@@ -24,15 +27,14 @@ public class SearchApiController {
 
     @GetMapping("/kakao")
     @ResponseBody
-    public JSONObject getBlogSearch(String query, @RequestParam(required = false) String sort, @RequestParam(required = false) Integer page,
-                                                    @RequestParam(required = false) Integer size) throws MalformedURLException, UnsupportedEncodingException, ParseException {
+    public List<KakaoApiResponseDTO.documents> getBlogSearch(String query, @RequestParam(required = false) String sort, @RequestParam(required = false) Integer page,
+                                                    @RequestParam(required = false) Integer size) throws MalformedURLException, UnsupportedEncodingException, ParseException, JsonProcessingException {
         KakaoApiRequestDTO requestDTO = new KakaoApiRequestDTO();
         requestDTO = KakaoApiDTOUtil.getRequestDTO(requestDTO, query, sort, page, size);
-        JSONObject blogData = kakaoApiService.getBlogSearch(requestDTO);
-        JSONArray documentArr = (JSONArray) blogData.get("documents");
+        List<KakaoApiResponseDTO.documents> blogData = kakaoApiService.getBlogSearch(requestDTO);
+        //JSONArray documentArr = (JSONArray) blogData.get("documents");
 
         return blogData;
     }
-
 
 }

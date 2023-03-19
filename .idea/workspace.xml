@@ -5,18 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3561b91-47b4-4123-ba3f-751cb45194b5" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/advice/SearchExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/ErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/custom/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/custom/NoSuchElementFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/dto/KakaoApiRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/dto/KakaoApiRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/web/SearchApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/web/search/SearchApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/common/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/interceptor/RankingInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/interceptor/RankingInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/blog/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/dto/KakaoApiResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/dto/KakaoApiResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/service/KakaoApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/service/KakaoApiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/service/impl/KakaoApiServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/service/impl/KakaoApiServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/ranking/data/RankingData.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/ranking/data/RankingData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/web/search/SearchApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/web/search/SearchApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/advice/SearchExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/advice/SearchExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/ErrorResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +92,7 @@
   <component name="RunManager" selected="애플리케이션.BlogApplication (1)">
     <configuration name="BlogApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hdragon.blog.BlogApplication" />
-      <module name="blog.blog.main~1" />
+      <module name="blog.blog.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.hdragon.blog.*" />
@@ -107,7 +107,22 @@
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.hdragon.blog.BlogApplication" />
-      <module name="blog" />
+      <module name="blog.blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hdragon.blog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.hdragon.blog.BlogApplication" />
+      <module name="blog.blog" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.hdragon.blog.*" />
@@ -140,7 +155,7 @@
       <method v="2" />
     </configuration>
     <configuration name="blog의 전부" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="blog" />
+      <module name="blog.blog" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -158,6 +173,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="애플리케이션.BlogApplication (1)" />
+        <item itemvalue="애플리케이션.BlogApplication" />
         <item itemvalue="애플리케이션.BlogApplication" />
         <item itemvalue="Gradle.blog [dependencies]" />
       </list>
@@ -193,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679171098376</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Exception Handler 및 공통 에러 코드, 에러 응답 작성">
+      <created>1679233730994</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679233730994</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -201,7 +224,8 @@
     <MESSAGE value="Api 서비스 인터페이스" />
     <MESSAGE value="Request DTO 셋팅" />
     <MESSAGE value="검색 API Paging, Sorting 구현 및 검색 키워드 별 Count 구현" />
-    <option name="LAST_COMMIT_MESSAGE" value="검색 API Paging, Sorting 구현 및 검색 키워드 별 Count 구현" />
+    <MESSAGE value="Exception Handler 및 공통 에러 코드, 에러 응답 작성" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exception Handler 및 공통 에러 코드, 에러 응답 작성" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
