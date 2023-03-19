@@ -23,12 +23,11 @@ public class RankingInterceptor implements HandlerInterceptor {
 
         String keyword = request.getParameter("query");
         Optional<RankingData> rankingData = rankingRepository.findByKeyword(keyword);
-        if(rankingData.isEmpty()) {
-            RankingData rankingdata = RankingData.builder().keyword(keyword).build();
+        if(rankingData.isEmpty()) {                                                     // 최초 검색 키워드이면
+            RankingData rankingdata = RankingData.builder().keyword(keyword).build();   // insert (JPA)
             rankingRepository.save(rankingdata);
-        } else {
-            System.out.println("id in else : " + rankingData.get().getId());
-            rankingRepository.searchCountPlusOne(rankingData.get().getId());
+        } else {                                                                        // 기존 검색 키워드이면
+            rankingRepository.searchCountPlusOne(rankingData.get().getId());            // update (JPQL)
         }
         return true;
     }
@@ -36,12 +35,10 @@ public class RankingInterceptor implements HandlerInterceptor {
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
 
-        //Logger.info("postHandle 1");
     }
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
 
-        //Logger.info("afterCompletion 1");
     }
 }
