@@ -17,7 +17,7 @@ import javax.persistence.*;
         name = "RANKING_SEQ_GENERATOR",
         sequenceName = "RANKING_SEQ",
         initialValue = 1,
-        allocationSize = 50)            // 대량 insert를 가정하여 1이 아닌 50으로 설정, DB에서 시퀀스 직접 사용시 한번에 50 증가
+        allocationSize = 50)            // 대량 insert를 가정하여 1이 아닌 50으로 설정, 단 DB에서 시퀀스 직접 사용시 한번에 50 증가
 public class RankingData {
 
     @Id

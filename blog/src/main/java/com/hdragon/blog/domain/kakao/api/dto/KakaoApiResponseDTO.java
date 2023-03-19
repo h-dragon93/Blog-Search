@@ -1,26 +1,16 @@
 package com.hdragon.blog.domain.kakao.api.dto;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import java.time.LocalDateTime;
-
+import com.fasterxml.jackson.annotation.JsonFormat;
+import lombok.*;
+import java.util.Date;
 
 public class KakaoApiResponseDTO {
 
-    @Data
+    @Getter
     @AllArgsConstructor
     @NoArgsConstructor
-    public static class meta {
-
-        private int total_count;
-        private int pageable_count;
-        private Boolean is_end;
-
-    }
-
+    @Builder
     public static class documents {
 
         private String title;
@@ -28,6 +18,19 @@ public class KakaoApiResponseDTO {
         private String url;
         private String blogname;
         private String thumbnail;
-        private LocalDateTime DateTime;
+        @JsonFormat(shape= JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss.SSSXXX", timezone="Asia/Seoul")  // Object Mapper with ISO 8601
+        private Date datetime;                                                                                      // zoned Time을 위해 Date 사용
+
     }
+
+    @Getter
+    @AllArgsConstructor
+    @Builder
+    public static class meta {
+
+        private int total_count;
+        private int pageable_count;
+        private Boolean is_end;
+    }
+
 }

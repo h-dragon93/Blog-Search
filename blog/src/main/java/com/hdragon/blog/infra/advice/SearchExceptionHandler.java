@@ -1,6 +1,7 @@
 package com.hdragon.blog.infra.advice;
 
 import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.hdragon.blog.infra.error.custom.BusinessException;
 import com.hdragon.blog.infra.error.ErrorCode;
 import com.hdragon.blog.infra.error.ErrorResponse;
@@ -20,7 +21,7 @@ import java.nio.file.AccessDeniedException;
 import java.sql.SQLException;
 
 @Slf4j
-@ControllerAdvice(basePackages = {"com.hdragon.blog.domain.web.search"})            // To-do 1. basePackages={}를 조정 또는 2. Global Exception으로 변경 가능
+@ControllerAdvice(basePackages = {"com.hdragon.blog.domain.web.search"})            // 업무 확장 시 1. basePackages={}에 추가 또는 2. Global Exception으로 변경 후 상위 패키지로 설정 가능
 public class SearchExceptionHandler {
 
     @ExceptionHandler(MethodArgumentNotValidException.class)                        // @Valid
@@ -82,8 +83,15 @@ public class SearchExceptionHandler {
     }
 
     @ExceptionHandler(JsonParseException.class)                                     // Json Parsing Error
-    public ResponseEntity<String> jsonParseExceptionHandler() {
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+    public ResponseEntity<String> jsonParseExceptionHandler(JsonParseException e) {
+        log.error("jsonParseExceptionHandler", e);
+        return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).build();
+    }
+
+    @ExceptionHandler(JsonProcessingException.class)                                     // Json Processing Error
+    public ResponseEntity<String> jsonProcessingExceptionHandler(JsonProcessingException e) {
+        log.error("jsonProcessingExceptionHandler", e);
+        return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).build();
     }
 
     @ExceptionHandler(DataAccessException.class)                                    // JDBC Error
