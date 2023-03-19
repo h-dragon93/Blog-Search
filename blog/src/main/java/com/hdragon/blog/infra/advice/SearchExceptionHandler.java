@@ -1,0 +1,99 @@
+package com.hdragon.blog.infra.advice;
+
+import com.fasterxml.jackson.core.JsonParseException;
+import com.hdragon.blog.infra.error.custom.BusinessException;
+import com.hdragon.blog.infra.error.ErrorCode;
+import com.hdragon.blog.infra.error.ErrorResponse;
+import com.hdragon.blog.infra.error.custom.NoSuchElementFoundException;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.dao.DataAccessException;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindException;
+import org.springframework.web.HttpRequestMethodNotSupportedException;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
+
+import java.nio.file.AccessDeniedException;
+import java.sql.SQLException;
+
+@Slf4j
+@ControllerAdvice(basePackages = {"com.hdragon.blog.domain.web.search"})            // To-do 1. basePackages={}를 조정 또는 2. Global Exception으로 변경 가능
+public class SearchExceptionHandler {
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)                        // @Valid
+    protected ResponseEntity<ErrorResponse> handleMethodArgumentNotValidException(MethodArgumentNotValidException e) {
+        log.error("handleMethodArgumentNotValidException", e);
+        final ErrorResponse response = ErrorResponse.of(ErrorCode.INVALID_INPUT_VALUE, e.getBindingResult());
+        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(NoSuchElementFoundException.class)                            // Element Not Found
+    protected ResponseEntity<ErrorResponse> handleNoSuchElementException(NoSuchElementFoundException e) {
+        log.error("NoSuchElementFoundException", e);
+        final ErrorCode errorCode = e.getErrorCode();
+        final ErrorResponse response = ErrorResponse.of(errorCode);
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+    }
+
+    @ExceptionHandler(BindException.class)                                          // @ModelAttribute
+    protected ResponseEntity<ErrorResponse> handleBindException(BindException e) {
+        log.error("handleBindException", e);
+        final ErrorResponse response = ErrorResponse.of(ErrorCode.INVALID_INPUT_VALUE, e.getBindingResult());
+        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(MethodArgumentTypeMismatchException.class)                    // @Enum Type
+    protected ResponseEntity<ErrorResponse> handleMethodArgumentTypeMismatchException(MethodArgumentTypeMismatchException e) {
+        log.error("handleMethodArgumentTypeMismatchException", e);
+        final ErrorResponse response = ErrorResponse.of(e);
+        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(HttpRequestMethodNotSupportedException.class)                 // Http Method
+    protected ResponseEntity<ErrorResponse> handleHttpRequestMethodNotSupportedException(HttpRequestMethodNotSupportedException e) {
+        log.error("handleHttpRequestMethodNotSupportedException", e);
+        final ErrorResponse response = ErrorResponse.of(ErrorCode.METHOD_NOT_ALLOWED);
+        return new ResponseEntity<>(response, HttpStatus.METHOD_NOT_ALLOWED);
+    }
+
+    @ExceptionHandler(AccessDeniedException.class)                                  // Authentication
+    protected ResponseEntity<ErrorResponse> handleAccessDeniedException(AccessDeniedException e) {
+        log.error("handleAccessDeniedException", e);
+        final ErrorResponse response = ErrorResponse.of(ErrorCode.HANDLE_ACCESS_DENIED);
+        return new ResponseEntity<>(response, HttpStatus.valueOf(ErrorCode.HANDLE_ACCESS_DENIED.getStatus()));
+    }
+
+    @ExceptionHandler(BusinessException.class)                                      // Business Error
+    protected ResponseEntity<ErrorResponse> handleBusinessException(BusinessException e) {
+        log.error("handleEntityNotFoundException", e);
+        final ErrorCode errorCode = e.getErrorCode();
+        final ErrorResponse response = ErrorResponse.of(errorCode);
+        return new ResponseEntity<>(response, HttpStatus.valueOf(errorCode.getStatus()));
+    }
+
+    @ExceptionHandler(Exception.class)                                              // 500 Error
+    protected ResponseEntity<ErrorResponse> handleException(Exception e) {
+        log.error("handleEntityNotFoundException", e);
+        final ErrorResponse response = ErrorResponse.of(ErrorCode.INTERNAL_SERVER_ERROR);
+        return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
+    @ExceptionHandler(JsonParseException.class)                                     // Json Parsing Error
+    public ResponseEntity<String> jsonParseExceptionHandler() {
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+    }
+
+    @ExceptionHandler(DataAccessException.class)                                    // JDBC Error
+    public ResponseEntity<String> dataExceptionHandle() {
+        return ResponseEntity.badRequest().build();
+    }
+
+    @ExceptionHandler(SQLException.class)                                           // SQL Error
+    public ResponseEntity<String> sqlExceptionHandle() {
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+    }
+
+}

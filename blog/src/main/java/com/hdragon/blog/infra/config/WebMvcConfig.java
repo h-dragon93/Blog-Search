@@ -1,4 +1,4 @@
-package com.hdragon.blog.infra.common;
+package com.hdragon.blog.infra.config;
 
 import com.hdragon.blog.domain.ranking.repository.RankingRepository;
 import com.hdragon.blog.infra.interceptor.RankingInterceptor;

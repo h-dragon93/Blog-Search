@@ -17,8 +17,8 @@ public class KakaoApiRequestDTO {
     @NotEmpty
     private String query;
 
-    @Builder.Default
-    private String sort = "accuracy";
+    @Builder.Default                    // 파라미터가 입력되지 않았을때 default 값 셋팅
+    private String sort = "accuracy";   // Builder의 인스턴스 리턴 방식에 의해 @Builder.Default 필요
 
     @Max(value=50)
     @Builder.Default
