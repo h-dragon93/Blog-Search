@@ -102,3 +102,7 @@ MappingJackson2HttpMessageConverter에 의해 JSON 형태로 브라우저에 전
 ⚙ **GET /search/topKeyword**
 
 ![Untitled (3)](https://user-images.githubusercontent.com/34955578/226884956-37d03a62-614c-4a76-80ef-8099bc0455b3.png)
+---
+
+## Junit5, Mockito를 활용한 단위 테스트 작성
+![image](https://user-images.githubusercontent.com/34955578/226894467-3d57babd-8315-4300-ae5a-45e391dc883c.png)
