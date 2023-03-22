@@ -33,8 +33,9 @@
 ---
 
 📃 전체 프로젝트 구조
+https://www.notion.so/API-5956dd72f8bc46f3aa2f58e9a014ed66?pvs=4#1ec41b4d6a7444448a0bf4ad8e17e425
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/51060a55-05d3-4c3b-a694-1a1c60a7f217/Untitled.png)
+
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/31aab90b-b281-46a7-9d26-b7ba86a8fb83/Untitled.png)
 
