@@ -24,9 +24,7 @@
 - 표준예외 처리를 위해 ErrorCode, ErrorResponse, Custom Exception활용
 - Checked Exception과 UnChecked Exception을 구분해 상속을 이용한 Custom Exception 구현
 - 키워드 별 검색 횟수 저장을 위한 로직은 서비스 공통 로직이므로 interceptor에서 처리
-- 검색 결과는 JSON 형태로 반환 및 이를 통해 블로그 제목, URL, 작성자, 작성일 등의 정보를
-
-      페이지네이션 가능한 형태로 제공
+- 검색 결과는 JSON 형태로 반환 및 이를 통해 블로그 제목, URL, 작성자, 작성일 등의 정보를 페이지네이션 가능한 형태로 제공
 
 ---
 
