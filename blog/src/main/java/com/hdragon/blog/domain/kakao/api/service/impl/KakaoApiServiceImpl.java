@@ -11,6 +11,7 @@ import com.hdragon.blog.domain.kakao.api.dto.KakaoApiRequestDTO;
 
 import com.hdragon.blog.domain.kakao.util.HttpUrlConnectionUtil;
 
+import com.hdragon.blog.domain.kakao.util.UrlBuilderUtil;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -42,24 +43,22 @@ public class KakaoApiServiceImpl implements KakaoApiService {
     @Override
     public List<KakaoApiResponseDTO.documents> getBlogSearch(KakaoApiRequestDTO apiRequestDTO) throws MalformedURLException, UnsupportedEncodingException, ParseException, JsonProcessingException {
 
-        StringBuilder urlBuilder = new StringBuilder(hosturl+bloguri);                          // https://dapi.kakao.com/v2/search/blog
-        urlBuilder.append("?").append("query=").append(URLEncoder.encode(apiRequestDTO.getQuery(),"UTF-8")).        // 한글 검색어 인코딩
-                   append("&").append("sort=").append(apiRequestDTO.getSort()).
-                   append("&").append("page=").append(apiRequestDTO.getPage()).
-                   append("&").append("size=").append(apiRequestDTO.getSize());
+        StringBuilder urlBuilder = new StringBuilder(hosturl+bloguri);          // Url 생성
+        String Url = UrlBuilderUtil.getUrlBuilder(apiRequestDTO, urlBuilder);
 
-        URL url = new URL(urlBuilder.toString());
+        URL url = new URL(Url);
         StringBuilder sb = new StringBuilder();
-        StringBuilder blogData = HttpUrlConnectionUtil.getInputStreamData(url, sb, apikey);     // html escape 문자열을 제거해보자
+        StringBuilder blogData = HttpUrlConnectionUtil.getInputStreamData(url, sb, apikey);     // HTTP 통신
 
         JSONParser jsonParser = new JSONParser();
-        JSONObject jsonObject = (JSONObject) jsonParser.parse(blogData.toString());
+        JSONObject jsonObject = (JSONObject) jsonParser.parse(blogData.toString());             // Json 파싱
 
         ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.registerModule(new JavaTimeModule());
-        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);   // property 미일치 시에도 우선 통과
+        objectMapper.registerModule(new JavaTimeModule());      // jackson ISO-8601 time mapping
+        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);   // property 미일치 pass
+
         String documentsString = jsonObject.get("documents").toString();
-        List<KakaoApiResponseDTO.documents> responseDtoList = Arrays.asList(objectMapper.readValue(documentsString, KakaoApiResponseDTO.documents[].class));
+        List<KakaoApiResponseDTO.documents> responseDtoList = Arrays.asList(objectMapper.readValue(documentsString, KakaoApiResponseDTO.documents[].class));    // Object 맵핑 후 데이터 변환
 
         return responseDtoList;
     }

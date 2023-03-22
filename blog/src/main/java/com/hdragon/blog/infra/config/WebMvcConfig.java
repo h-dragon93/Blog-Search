@@ -17,7 +17,9 @@ public class WebMvcConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry) {
 
         registry.addInterceptor(new RankingInterceptor(rankingRepository))
-                .addPathPatterns("/search/*");
+                .addPathPatterns("/search/*")
+                .excludePathPatterns("/search/topKeyword")
+        ;
     }
 
 }

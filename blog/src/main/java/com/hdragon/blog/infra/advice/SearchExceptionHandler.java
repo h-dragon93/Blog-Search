@@ -2,10 +2,11 @@ package com.hdragon.blog.infra.advice;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.hdragon.blog.infra.error.custom.BusinessException;
+import com.hdragon.blog.infra.error.exception.ApplicationException;
+import com.hdragon.blog.infra.error.exception.BusinessException;
 import com.hdragon.blog.infra.error.ErrorCode;
 import com.hdragon.blog.infra.error.ErrorResponse;
-import com.hdragon.blog.infra.error.custom.NoSuchElementFoundException;
+import com.hdragon.blog.infra.error.exception.NoSuchElementFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DataAccessException;
 import org.springframework.http.HttpStatus;
@@ -23,6 +24,14 @@ import java.sql.SQLException;
 @Slf4j
 @ControllerAdvice(basePackages = {"com.hdragon.blog.domain.web.search"})            // 업무 확장 시 1. basePackages={}에 추가 또는 2. Global Exception으로 변경 후 상위 패키지로 설정 가능
 public class SearchExceptionHandler {
+
+    @ExceptionHandler(ApplicationException.class)
+    protected  ResponseEntity<ErrorResponse> handleApplicationException(ApplicationException e) {
+        log.error("handleEntityNotFoundException", e);
+        final ErrorCode errorCode = e.getErrorCode();
+        final ErrorResponse response = ErrorResponse.of(errorCode);
+        return new ResponseEntity<>(response, HttpStatus.valueOf(errorCode.getStatus()));
+    }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)                        // @Valid
     protected ResponseEntity<ErrorResponse> handleMethodArgumentNotValidException(MethodArgumentNotValidException e) {

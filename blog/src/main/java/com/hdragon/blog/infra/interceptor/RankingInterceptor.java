@@ -1,6 +1,5 @@
 package com.hdragon.blog.infra.interceptor;
 
-
 import com.hdragon.blog.domain.ranking.data.RankingData;
 import com.hdragon.blog.domain.ranking.repository.RankingRepository;
 import lombok.RequiredArgsConstructor;

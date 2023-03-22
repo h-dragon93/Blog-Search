@@ -19,7 +19,7 @@ public class KakaoApiResponseDTO {
         private String blogname;
         private String thumbnail;
         @JsonFormat(shape= JsonFormat.Shape.STRING, pattern="yyyy-MM-dd'T'HH:mm:ss.SSSXXX", timezone="Asia/Seoul")  // Object Mapper with ISO 8601
-        private Date datetime;                                                                                      // zoned Time을 위해 Date 사용
+        private Date datetime;  // zoned Time을 위해 Date 사용
 
     }
 

@@ -5,6 +5,8 @@ import com.hdragon.blog.domain.kakao.api.dto.KakaoApiRequestDTO;
 import com.hdragon.blog.domain.kakao.api.dto.KakaoApiResponseDTO;
 import com.hdragon.blog.domain.kakao.api.service.KakaoApiService;
 import com.hdragon.blog.domain.kakao.util.KakaoApiDTOUtil;
+import com.hdragon.blog.domain.ranking.api.service.RankingService;
+import com.hdragon.blog.domain.ranking.data.RankingData;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.json.simple.JSONArray;
@@ -16,6 +18,8 @@ import org.springframework.web.bind.annotation.*;
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 
 @Slf4j
 @Controller
@@ -24,17 +28,25 @@ import java.util.List;
 public class SearchApiController {
 
     private final KakaoApiService kakaoApiService;
+    private final RankingService rankingService;
 
     @GetMapping("/kakao")
     @ResponseBody
-    public List<KakaoApiResponseDTO.documents> getBlogSearch(String query, @RequestParam(required = false) String sort, @RequestParam(required = false) Integer page,
-                                                    @RequestParam(required = false) Integer size) throws MalformedURLException, UnsupportedEncodingException, ParseException, JsonProcessingException {
+    public List<KakaoApiResponseDTO.documents> getBlogSearch(@RequestParam String query, @RequestParam(required = false) String sort,
+                                                             @RequestParam(required = false) Integer page, @RequestParam(required = false) Integer size)
+                                                                    throws MalformedURLException, UnsupportedEncodingException, ParseException, JsonProcessingException {
         KakaoApiRequestDTO requestDTO = new KakaoApiRequestDTO();
         requestDTO = KakaoApiDTOUtil.getRequestDTO(requestDTO, query, sort, page, size);
         List<KakaoApiResponseDTO.documents> blogData = kakaoApiService.getBlogSearch(requestDTO);
-        //JSONArray documentArr = (JSONArray) blogData.get("documents");
 
         return blogData;
     }
 
+    @GetMapping("/topKeyword")
+    @ResponseBody
+    public Optional<List<RankingData>> getTopKeyword() {
+        Optional<List<RankingData>> topKeyword = rankingService.getTopSearchedKeyword();
+
+        return topKeyword;
+    }
 }

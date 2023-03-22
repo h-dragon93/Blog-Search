@@ -4,19 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3561b91-47b4-4123-ba3f-751cb45194b5" name="변경" comment="">
+    <list default="true" id="352b0457-0b92-424e-b719-4cbbd30840a2" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/blog.blog.test~1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/util/UrlBuilderUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/ranking/api/service/RankingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/ranking/api/service/impl/RankingServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/exception/ApplicationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/exception/BaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/test/java/com/hdragon/blog/domain/kakao/util/KakaoApiDTOUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/test/java/com/hdragon/blog/domain/kakao/util/UrlBuilderUtilTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/test/java/com/hdragon/blog/domain/web/search/SearchApiControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/test/java/com/hdragon/blog/domain/web/search/SearchApiWebMvcTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/blog/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/dto/KakaoApiResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/dto/KakaoApiResponseDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/service/KakaoApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/service/KakaoApiService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/service/impl/KakaoApiServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/service/impl/KakaoApiServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/util/HttpUrlConnectionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/util/HttpUrlConnectionUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/ranking/data/RankingData.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/ranking/data/RankingData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/ranking/repository/RankingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/ranking/repository/RankingRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/web/search/SearchApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/web/search/SearchApiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/advice/SearchExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/advice/SearchExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/ErrorCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/ErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/config/WebMvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/custom/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/exception/BusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/custom/NoSuchElementFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/exception/NoSuchElementFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/interceptor/RankingInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/interceptor/RankingInterceptor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +44,6 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/blog">
-      <ProjectState />
-    </projectState>
-    <projectState path="$PROJECT_DIR$/config">
       <ProjectState />
     </projectState>
   </component>
@@ -44,6 +60,40 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="blog" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="blog" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="blog" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="blog" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="blog" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="blog" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="blog" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -54,6 +104,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -62,67 +113,37 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2NAT9cha3uMnYVwyDVWOYb48CYy" />
+  <component name="ProjectId" id="2NI0xF9EfBlk6nV1sYn8b9pepzq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="모듈" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="project.structure.last.edited" value="SDK" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.35287356" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
-    <property name="settings.editor.splitter.proportion" value="0.25865582" />
+    <property name="project.structure.side.proportion" value="0.47673216" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="애플리케이션.BlogApplication (1)">
-    <configuration name="BlogApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hdragon.blog.BlogApplication" />
-      <module name="blog.blog.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hdragon.blog.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BlogApplication" type="Application" factoryName="Application" temporary="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.hdragon.blog.BlogApplication" />
-      <module name="blog.blog" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hdragon.blog.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.hdragon.blog.domain.kakao.util" />
+      <recent name="com.hdragon.blog.domain.web.search" />
+    </key>
+  </component>
+  <component name="RunManager" selected="애플리케이션.BlogApplication">
     <configuration name="BlogApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.hdragon.blog.BlogApplication" />
-      <module name="blog.blog" />
+      <module name="blog.blog.main~1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.hdragon.blog.*" />
@@ -133,108 +154,86 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="blog [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/blog" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="dependencies" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="blog의 전부" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="blog.blog" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+    <configuration name="SearchApiControllerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blog.blog.test~1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hdragon.blog.domain.web.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hdragon.blog.domain.web.search" />
+      <option name="MAIN_CLASS_NAME" value="com.hdragon.blog.domain.web.search.SearchApiControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Gradle.blog [dependencies]" />
-      <item itemvalue="JUnit.blog의 전부" />
-      <item itemvalue="애플리케이션.BlogApplication" />
-      <item itemvalue="애플리케이션.BlogApplication (1)" />
-    </list>
+    <configuration name="SearchApiControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blog.blog.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hdragon.blog.domain.web.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hdragon.blog.domain.web.search" />
+      <option name="MAIN_CLASS_NAME" value="com.hdragon.blog.domain.web.search.SearchApiControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchApiWebMvcTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blog.blog.test~1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hdragon.blog.domain.web.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hdragon.blog.domain.web.search" />
+      <option name="MAIN_CLASS_NAME" value="com.hdragon.blog.domain.web.search.SearchApiWebMvcTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchApiWebMvcTest.testCategoryController" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blog.blog.test~1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hdragon.blog.domain.web.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hdragon.blog.domain.web.search" />
+      <option name="MAIN_CLASS_NAME" value="com.hdragon.blog.domain.web.search.SearchApiWebMvcTest" />
+      <option name="METHOD_NAME" value="testCategoryController" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="애플리케이션.BlogApplication (1)" />
         <item itemvalue="애플리케이션.BlogApplication" />
-        <item itemvalue="애플리케이션.BlogApplication" />
-        <item itemvalue="Gradle.blog [dependencies]" />
+        <item itemvalue="JUnit.SearchApiControllerTest (1)" />
+        <item itemvalue="JUnit.SearchApiWebMvcTest" />
+        <item itemvalue="JUnit.SearchApiWebMvcTest.testCategoryController" />
+        <item itemvalue="JUnit.SearchApiControllerTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
-      <changelist id="d3561b91-47b4-4123-ba3f-751cb45194b5" name="변경" comment="" />
-      <created>1679105737232</created>
+      <changelist id="352b0457-0b92-424e-b719-4cbbd30840a2" name="변경" comment="" />
+      <created>1679336545845</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1679105737232</updated>
+      <updated>1679336545845</updated>
     </task>
-    <task id="LOCAL-00001" summary="프로젝트 최초 init">
-      <created>1679108697016</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1679108697016</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Api 서비스 인터페이스">
-      <created>1679115057559</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1679115057559</updated>
-    </task>
-    <task id="LOCAL-00003" summary="검색 API Paging, Sorting 구현 및 검색 키워드 별 Count 구현">
-      <created>1679171098376</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1679171098376</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Exception Handler 및 공통 에러 코드, 에러 응답 작성">
-      <created>1679233730994</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1679233730994</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="프로젝트 최초 init" />
-    <MESSAGE value="Api 서비스 인터페이스" />
-    <MESSAGE value="Request DTO 셋팅" />
-    <MESSAGE value="검색 API Paging, Sorting 구현 및 검색 키워드 별 Count 구현" />
-    <MESSAGE value="Exception Handler 및 공통 에러 코드, 에러 응답 작성" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exception Handler 및 공통 에러 코드, 에러 응답 작성" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NullPointerException" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
