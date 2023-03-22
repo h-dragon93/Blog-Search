@@ -39,6 +39,7 @@
 
 
              ⛏ 프로젝트 구조 요약본
+![Untitled (1)](https://user-images.githubusercontent.com/34955578/226884436-8e78daed-616f-4da7-8779-46ea8745a0b8.png)
 
 ## API 명세서
 
