@@ -12,17 +12,17 @@
 
       JAR 파일 다운로드 링크 👇👇
 
-        [https://drive.google.com/file/d/1JUd04an7lQed-7FtSaQ9VdnQDm7Xv2MV/view?usp=sharing]
+        https://drive.google.com/file/d/1JUd04an7lQed-7FtSaQ9VdnQDm7Xv2MV/view?usp=sharing
 
       실행방법  →  java -jar blog-0.0.1-SNAPSHOT.jar
 
 😊 테스트 URL 예시 (Post Man / Chrome)
 
-        (http://localhost:8081/search/kakao?query=%EB%B8%94%EB%A1%9C%EA%B7%B8&sort=recency&page=6&size=3)
+        http://localhost:8081/search/kakao?query=%EB%B8%94%EB%A1%9C%EA%B7%B8&sort=recency&page=6&size=3
 
 😊 DB 데이터 검증 (H2)
 
-        [http://localhost:8081/h2](http://localhost:8081/h2)
+        http://localhost:8081/h2
 
      saved Settings → Generic H2 (Server)
 
