@@ -97,6 +97,8 @@ MappingJackson2HttpMessageConverter에 의해 JSON 형태로 브라우저에 전
 
 ⚙ **GET /search/kakao**
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6be39298-64e5-4444-ac9a-30a7a15432f0/Untitled.png)
+![Untitled (2)](https://user-images.githubusercontent.com/34955578/226884917-6899bbf3-8f50-481b-9981-a0e9964662b1.png)
 
 ⚙ **GET /search/topKeyword**
+
+![Untitled (3)](https://user-images.githubusercontent.com/34955578/226884956-37d03a62-614c-4a76-80ef-8099bc0455b3.png)
