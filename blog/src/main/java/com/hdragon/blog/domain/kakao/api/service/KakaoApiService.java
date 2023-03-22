@@ -12,6 +12,6 @@ import java.util.List;
 
 public interface KakaoApiService {                      // Bean inject by spring proxy
 
-    public List<KakaoApiResponseDTO.documents> getBlogSearch(KakaoApiRequestDTO apiRequestDTO) throws MalformedURLException, UnsupportedEncodingException,
+    List<KakaoApiResponseDTO.documents> getBlogSearch(KakaoApiRequestDTO apiRequestDTO) throws MalformedURLException, UnsupportedEncodingException,
                                                                                                       ParseException, JsonProcessingException;
 }

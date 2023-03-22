@@ -54,7 +54,7 @@ public class KakaoApiServiceImpl implements KakaoApiService {
         JSONObject jsonObject = (JSONObject) jsonParser.parse(blogData.toString());             // Json 파싱
 
         ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.registerModule(new JavaTimeModule());      // jackson ISO-8601 time mapping
+        objectMapper.registerModule(new JavaTimeModule());                                   // jackson ISO-8601 time mapping
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);   // property 미일치 pass
 
         String documentsString = jsonObject.get("documents").toString();

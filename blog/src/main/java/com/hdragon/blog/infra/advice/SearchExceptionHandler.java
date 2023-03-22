@@ -25,19 +25,19 @@ import java.sql.SQLException;
 @ControllerAdvice(basePackages = {"com.hdragon.blog.domain.web.search"})            // 업무 확장 시 1. basePackages={}에 추가 또는 2. Global Exception으로 변경 후 상위 패키지로 설정 가능
 public class SearchExceptionHandler {
 
-    @ExceptionHandler(ApplicationException.class)
-    protected  ResponseEntity<ErrorResponse> handleApplicationException(ApplicationException e) {
-        log.error("handleEntityNotFoundException", e);
-        final ErrorCode errorCode = e.getErrorCode();
-        final ErrorResponse response = ErrorResponse.of(errorCode);
-        return new ResponseEntity<>(response, HttpStatus.valueOf(errorCode.getStatus()));
-    }
-
     @ExceptionHandler(MethodArgumentNotValidException.class)                        // @Valid
     protected ResponseEntity<ErrorResponse> handleMethodArgumentNotValidException(MethodArgumentNotValidException e) {
         log.error("handleMethodArgumentNotValidException", e);
         final ErrorResponse response = ErrorResponse.of(ErrorCode.INVALID_INPUT_VALUE, e.getBindingResult());
         return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(ApplicationException.class)
+    protected  ResponseEntity<ErrorResponse> handleApplicationException(ApplicationException e) {
+        log.error("handleApplicationException", e);
+        final ErrorCode errorCode = e.getErrorCode();
+        final ErrorResponse response = ErrorResponse.of(errorCode);
+        return new ResponseEntity<>(response, HttpStatus.valueOf(errorCode.getStatus()));
     }
 
     @ExceptionHandler(NoSuchElementFoundException.class)                            // Element Not Found
@@ -78,17 +78,17 @@ public class SearchExceptionHandler {
 
     @ExceptionHandler(BusinessException.class)                                      // Business Error
     protected ResponseEntity<ErrorResponse> handleBusinessException(BusinessException e) {
-        log.error("handleEntityNotFoundException", e);
+        log.error("handleBusinessException", e);
         final ErrorCode errorCode = e.getErrorCode();
         final ErrorResponse response = ErrorResponse.of(errorCode);
         return new ResponseEntity<>(response, HttpStatus.valueOf(errorCode.getStatus()));
     }
 
-    @ExceptionHandler(Exception.class)                                              // 500 Error
+    @ExceptionHandler(Exception.class)                                              // 400 Error
     protected ResponseEntity<ErrorResponse> handleException(Exception e) {
-        log.error("handleEntityNotFoundException", e);
-        final ErrorResponse response = ErrorResponse.of(ErrorCode.INTERNAL_SERVER_ERROR);
-        return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+        log.error("handleException", e);
+        final ErrorResponse response = ErrorResponse.of(ErrorCode.INVALID_INPUT_VALUE);
+        return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(JsonParseException.class)                                     // Json Parsing Error

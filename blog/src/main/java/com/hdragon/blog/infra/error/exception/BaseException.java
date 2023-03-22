@@ -21,20 +21,12 @@ public class BaseException extends Exception {      //  checked exception 인 Ex
 
     protected Exception wrappedException = null;
 
-    public BaseException() {
-        this("BaseException No Message", null, null);
-    }
-
     public BaseException(String defaultMessage) {
         this(defaultMessage, null, null);
     }
 
     public BaseException(Throwable wrappedException) {
         this("BaseException No Message", null, wrappedException);
-    }
-
-    public BaseException(String defaultMessage, Throwable wrappedException) {
-        this(defaultMessage, null, wrappedException);
     }
 
     public BaseException(String defaultMessage, Object[] messageParameters, Throwable wrappedException) {

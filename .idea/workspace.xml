@@ -5,37 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="352b0457-0b92-424e-b719-4cbbd30840a2" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/blog.blog.test~1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/util/UrlBuilderUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/ranking/api/service/RankingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/ranking/api/service/impl/RankingServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/exception/ApplicationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/exception/BaseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/test/java/com/hdragon/blog/domain/kakao/util/KakaoApiDTOUtilTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/test/java/com/hdragon/blog/domain/kakao/util/UrlBuilderUtilTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/test/java/com/hdragon/blog/domain/web/search/SearchApiControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/test/java/com/hdragon/blog/domain/web/search/SearchApiWebMvcTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/blog.blog.test.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/blog/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/dto/KakaoApiResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/dto/KakaoApiResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/dto/KakaoApiRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/dto/KakaoApiRequestDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/service/KakaoApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/service/KakaoApiService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/service/impl/KakaoApiServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/api/service/impl/KakaoApiServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/util/HttpUrlConnectionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/util/HttpUrlConnectionUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/ranking/data/RankingData.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/ranking/data/RankingData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/ranking/repository/RankingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/ranking/repository/RankingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/util/KakaoApiDTOUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/kakao/util/KakaoApiDTOUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/ranking/api/service/RankingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/ranking/api/service/RankingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/web/search/SearchApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/domain/web/search/SearchApiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/advice/SearchExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/advice/SearchExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/custom/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/exception/BusinessException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/custom/NoSuchElementFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/exception/NoSuchElementFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/ErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/exception/BaseException.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/error/exception/BaseException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/interceptor/RankingInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/hdragon/blog/infra/interceptor/RankingInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/test/java/com/hdragon/blog/domain/web/search/SearchApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/test/java/com/hdragon/blog/domain/web/search/SearchApiControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/test/java/com/hdragon/blog/domain/web/search/SearchApiWebMvcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/test/java/com/hdragon/blog/domain/web/search/SearchApiWebMvcTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +126,7 @@
       <recent name="com.hdragon.blog.domain.web.search" />
     </key>
   </component>
-  <component name="RunManager" selected="애플리케이션.BlogApplication">
+  <component name="RunManager">
     <configuration name="BlogApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hdragon.blog.BlogApplication" />
       <module name="blog.blog.main~1" />
@@ -154,74 +140,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchApiControllerTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="blog.blog.test~1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hdragon.blog.domain.web.search.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hdragon.blog.domain.web.search" />
-      <option name="MAIN_CLASS_NAME" value="com.hdragon.blog.domain.web.search.SearchApiControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchApiControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="blog.blog.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hdragon.blog.domain.web.search.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hdragon.blog.domain.web.search" />
-      <option name="MAIN_CLASS_NAME" value="com.hdragon.blog.domain.web.search.SearchApiControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchApiWebMvcTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="blog.blog.test~1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hdragon.blog.domain.web.search.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hdragon.blog.domain.web.search" />
-      <option name="MAIN_CLASS_NAME" value="com.hdragon.blog.domain.web.search.SearchApiWebMvcTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchApiWebMvcTest.testCategoryController" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="blog.blog.test~1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hdragon.blog.domain.web.search.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hdragon.blog.domain.web.search" />
-      <option name="MAIN_CLASS_NAME" value="com.hdragon.blog.domain.web.search.SearchApiWebMvcTest" />
-      <option name="METHOD_NAME" value="testCategoryController" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="애플리케이션.BlogApplication" />
-        <item itemvalue="JUnit.SearchApiControllerTest (1)" />
-        <item itemvalue="JUnit.SearchApiWebMvcTest" />
-        <item itemvalue="JUnit.SearchApiWebMvcTest.testCategoryController" />
-        <item itemvalue="JUnit.SearchApiControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -234,6 +155,18 @@
       <option name="presentableId" value="Default" />
       <updated>1679336545845</updated>
     </task>
+    <task id="LOCAL-00001" summary="최다 검색 키워드 제공 서비스 구현">
+      <created>1679467741699</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679467741699</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="최다 검색 키워드 제공 서비스 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="최다 검색 키워드 제공 서비스 구현" />
   </component>
 </project>

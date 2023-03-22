@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.validation.BindingResult;
@@ -40,10 +41,6 @@ public class ErrorResponse {
         return new ErrorResponse(code, FieldError.of(bindingResult));
     }
 
-    public static ErrorResponse of(final ErrorCode code, final List<FieldError> errors) {
-        return new ErrorResponse(code, errors);
-    }
-
     public static ErrorResponse of(MethodArgumentTypeMismatchException e) {
         final String value = e.getValue() == null ? "" : e.getValue().toString();
         final List<ErrorResponse.FieldError> errors = ErrorResponse.FieldError.of(e.getName(), value, e.getErrorCode());
@@ -52,16 +49,11 @@ public class ErrorResponse {
 
     @Getter
     @NoArgsConstructor(access = AccessLevel.PROTECTED)
+    @AllArgsConstructor
     public static class FieldError {
         private String field;
         private String value;
         private String reason;
-
-        private FieldError(final String field, final String value, final String reason) {
-            this.field = field;
-            this.value = value;
-            this.reason = reason;
-        }
 
         public static List<FieldError> of(final String field, final String value, final String reason) {
             List<FieldError> fieldErrors = new ArrayList<>();
