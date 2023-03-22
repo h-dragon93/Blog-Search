@@ -1,10 +1,12 @@
-package com.hdragon.blog.infra.error.custom;
+package com.hdragon.blog.infra.error.exception;
 
 import com.hdragon.blog.infra.error.ErrorCode;
+import lombok.Getter;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(value = HttpStatus.NOT_FOUND)
+@Getter
 public class NoSuchElementFoundException extends RuntimeException{
 
     private ErrorCode errorCode;
@@ -17,10 +19,6 @@ public class NoSuchElementFoundException extends RuntimeException{
     public NoSuchElementFoundException(ErrorCode errorCode) {
         super(errorCode.getMessage());
         this.errorCode = errorCode;
-    }
-
-    public ErrorCode getErrorCode() {
-        return errorCode;
     }
 
 }
