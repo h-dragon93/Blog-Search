@@ -33,6 +33,7 @@
 ![Untitled](https://user-images.githubusercontent.com/34955578/226884133-64f51829-2d1b-4682-a680-5ed2ac9c3ada.png)
 
 ⛏ 프로젝트 구조 요약본
+
 ![Untitled (1)](https://user-images.githubusercontent.com/34955578/226884436-8e78daed-616f-4da7-8779-46ea8745a0b8.png)
 
 ## API 명세서
