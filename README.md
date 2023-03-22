@@ -6,8 +6,6 @@
 
 ✔ 프로젝트 구조는 크게 인프라(infra)와 도메인(domain)으로 설계
 
-[https://github.com/h-dragon93/blog_search](https://github.com/h-dragon93/blog_search)
-
 ---
 
 🔑 **도메인 디렉토리**
