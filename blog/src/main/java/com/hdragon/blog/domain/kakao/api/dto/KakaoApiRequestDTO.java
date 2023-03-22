@@ -5,6 +5,7 @@ import lombok.*;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
@@ -12,7 +13,7 @@ import javax.validation.constraints.NotEmpty;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class KakaoApiRequestDTO {
+public class KakaoApiRequestDTO{
 
     @NotEmpty
     private String query;

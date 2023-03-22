@@ -1,13 +1,16 @@
 package com.hdragon.blog.domain.web.search;
 
 import com.hdragon.blog.domain.kakao.api.service.KakaoApiService;
+import com.hdragon.blog.domain.ranking.api.service.RankingService;
 import com.hdragon.blog.domain.ranking.repository.RankingRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
@@ -29,6 +32,9 @@ class SearchApiWebMvcTest {
 
     @MockBean
     private RankingRepository rankingRepository;
+
+    @MockBean
+    private RankingService rankingService;
 
     @Test
     public void testCategoryController() throws Exception {
