@@ -12,7 +12,7 @@
 
       JAR 파일 다운로드 링크 👇👇
 
-        (https://drive.google.com/file/d/1JUd04an7lQed-7FtSaQ9VdnQDm7Xv2MV/view?usp=sharing)
+        [https://drive.google.com/file/d/1JUd04an7lQed-7FtSaQ9VdnQDm7Xv2MV/view?usp=sharing]
 
       실행방법  →  java -jar blog-0.0.1-SNAPSHOT.jar
 
